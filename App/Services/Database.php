@@ -10,7 +10,7 @@ class Database
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ];
         
-        $this->connection = new PDO("mysql:host=localhost;dbname=test-chat", 'root', '', $options);
+        $this->connection = new PDO("mysql:host=localhost;dbname=chat", 'root', '', $options);
 
         $this->connection->exec("SET CHARACTER SET UTF8");
     }
